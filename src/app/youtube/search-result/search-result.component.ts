@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {VideoDetail} from '../video-detail.model';
 
 @Component({
   selector: 'app-search-result',
@@ -6,11 +7,11 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./search-result.component.css']
 })
 export class SearchResultComponent implements OnInit {
+  @Input() result: VideoDetail;
 
   constructor() {
   }
 
   ngOnInit() {
   }
-
 }
